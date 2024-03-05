@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "0cf7c591-1e57-4cd4-b7ba-5dd85e7b9cee",
+		"name": "Redis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19726441"
+	},
+	"item": [
+		{
+			"name": "Get Value form Redis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_value/Vishal",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_value",
+						"Vishal"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Set value in Redis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"key\":\"Vishal\",\r\n    \"value\":\"Excellent Coder\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/set_value",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"set_value"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
